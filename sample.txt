@@ -1,0 +1,167 @@
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPlus,
+  faFont,
+  faListAlt,
+  faCheckSquare,
+  faCalendarAlt,
+  faEdit,
+  faFileUpload,
+  faAlignLeft,
+  faAngleDown,
+  faBars,
+  faList,
+} from "@fortawesome/free-solid-svg-icons";
+
+export const FontAwesome: React.FC = () => {
+  return (
+    <section className="section">
+      <div className="container">
+        <h1 className="title">Icons</h1>
+
+        <div className="field">
+          <p className="buttons">
+            <button className="button is-dark">
+              <span className="icon">
+                <FontAwesomeIcon icon={faPlus} />
+              </span>
+            </button>
+            <button className="button">
+              <span className="icon">
+                <FontAwesomeIcon icon={faFont} />
+              </span>
+              <span>Text</span>
+            </button>
+            <div className="dropdown is-active">
+              <div className="dropdown-trigger">
+                <button
+                  className="button"
+                  aria-haspopup="true"
+                  aria-controls="dropdown-menu"
+                  style={{ marginRight: "0.5rem" }}
+                >
+                  <span className="icon">
+                    <FontAwesomeIcon icon={faEdit} />
+                  </span>
+                  <span>Input</span>
+                  <span className="icon">
+                    <FontAwesomeIcon icon={faAngleDown} />
+                  </span>
+                </button>
+              </div>
+              <div className="dropdown-menu" id="dropdown-menu" role="menu">
+                <div className="dropdown-content">
+                  <a href="#" className="dropdown-item">
+                    One line
+                  </a>
+                  <a href="#" className="dropdown-item">
+                    Multiple lines
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="dropdown is-active">
+              <div className="dropdown-trigger">
+                <button
+                  className="button"
+                  aria-haspopup="true"
+                  aria-controls="dropdown-menu"
+                  style={{ marginRight: "0.5rem" }}
+                >
+                  <span className="icon">
+                    <FontAwesomeIcon icon={faList} />
+                  </span>
+                  <span>List</span>
+                  <span className="icon">
+                    <FontAwesomeIcon icon={faAngleDown} />
+                  </span>
+                </button>
+              </div>
+              <div className="dropdown-menu" id="dropdown-menu" role="menu">
+                <div className="dropdown-content">
+                  <a
+                    href="#"
+                    className="dropdown-item"
+                    title="Only one item can be selected."
+                  >
+                    List Box
+                  </a>
+                  <a
+                    href="#"
+                    className="dropdown-item is-active"
+                    title="Only one item can be selected."
+                  >
+                    Radio Button
+                  </a>
+                  <a
+                    href="#"
+                    className="dropdown-item"
+                    title="Multiple selections are possible."
+                  >
+                    Check Box
+                  </a>
+                </div>
+              </div>
+            </div>
+            <button className="button">
+              <span className="icon">
+                <FontAwesomeIcon icon={faCalendarAlt} />
+              </span>
+              <span>Date</span>
+            </button>
+            <button className="button">
+              <span className="icon">
+                <FontAwesomeIcon icon={faFileUpload} />
+              </span>
+              <span>File Upload</span>
+            </button>
+          </p>
+
+          <p className="buttons">
+            <button className="button is-dark">
+              <span className="icon">
+                <FontAwesomeIcon icon={faPlus} />
+              </span>
+              <span>New Addition</span>
+            </button>
+          </p>
+
+          <p className="buttons">
+            <button className="button is-small">
+              <span className="icon is-small">
+                <FontAwesomeIcon icon={faAlignLeft} />
+              </span>
+              <span>Text Area</span>
+            </button>
+            <button className="button is-small">
+              <span className="icon is-small">
+                <FontAwesomeIcon icon={faListAlt} />
+              </span>
+              <span>List</span>
+            </button>
+            <button className="button is-small">
+              <span className="icon is-small">
+                <FontAwesomeIcon icon={faCheckSquare} />
+              </span>
+              <span>Check Box</span>
+            </button>
+            <button className="button is-small">
+              <span className="icon is-small">
+                <FontAwesomeIcon icon={faCalendarAlt} />
+              </span>
+              <span>Date</span>
+            </button>
+            <button className="button is-small">
+              <span className="icon is-small">
+                <FontAwesomeIcon icon={faFileUpload} />
+              </span>
+              <span>Upload</span>
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
