@@ -44,7 +44,7 @@ export const FontAwesome: React.FC = () => {
               </span>
               <span>Text</span>
             </button>
-            <div className="dropdown is-active">
+            <div className="dropdown is-hoverable">
               <div className="dropdown-trigger">
                 <button
                   className="button"
@@ -73,7 +73,7 @@ export const FontAwesome: React.FC = () => {
               </div>
             </div>
 
-            <div className="dropdown is-active">
+            <div className="dropdown is-hoverable">
               <div className="dropdown-trigger">
                 <button
                   className="button"
@@ -101,7 +101,7 @@ export const FontAwesome: React.FC = () => {
                   </a>
                   <a
                     href="#radio"
-                    className="dropdown-item is-active"
+                    className="dropdown-item"
                     title="Only one item can be selected."
                   >
                     Radio button
