@@ -26,7 +26,7 @@ export const FontAwesome: React.FC = () => {
               <span className="icon">
                 <FontAwesomeIcon icon={faClone} />
               </span>
-              <span>Add Section</span>
+              <span>Add section</span>
             </button>
           </p>
         </div>
@@ -63,11 +63,11 @@ export const FontAwesome: React.FC = () => {
               </div>
               <div className="dropdown-menu" id="dropdown-menu" role="menu">
                 <div className="dropdown-content">
-                  <a href="#" className="dropdown-item">
-                    One line
+                  <a href="#single" className="dropdown-item">
+                    Single line input
                   </a>
-                  <a href="#" className="dropdown-item">
-                    Multiple lines
+                  <a href="#multi" className="dropdown-item">
+                    Multi-line input
                   </a>
                 </div>
               </div>
@@ -93,25 +93,25 @@ export const FontAwesome: React.FC = () => {
               <div className="dropdown-menu" id="dropdown-menu" role="menu">
                 <div className="dropdown-content">
                   <a
-                    href="#"
+                    href="#list"
                     className="dropdown-item"
                     title="Only one item can be selected."
                   >
-                    List Box
+                    List box
                   </a>
                   <a
-                    href="#"
+                    href="#radio"
                     className="dropdown-item is-active"
                     title="Only one item can be selected."
                   >
-                    Radio Button
+                    Radio button
                   </a>
                   <a
-                    href="#"
+                    href="#check"
                     className="dropdown-item"
                     title="Multiple selections are possible."
                   >
-                    Check Box
+                    Check box
                   </a>
                 </div>
               </div>
@@ -126,7 +126,7 @@ export const FontAwesome: React.FC = () => {
               <span className="icon">
                 <FontAwesomeIcon icon={faFileUpload} />
               </span>
-              <span>File Upload</span>
+              <span>File upload</span>
             </button>
           </p>
         </div>
